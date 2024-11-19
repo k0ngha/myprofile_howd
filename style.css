@@ -1,0 +1,396 @@
+@import url('//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+
+:root {
+    --color-primary: #0200FD;
+    --color-gray: #75818D;
+    --font-top-area: "omnigothic", sans-serif;
+    --font-english: "urw-din", sans-serif;
+    --font-korean: 'Spoqa Han Sans Neo', sans-serif;
+    --font-intro: 'ds-endendend', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {
+    font-family: var(--font-korean);
+}
+main {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+.eng {
+    font-family: var(--font-english);
+}
+.divide {
+    height: 1px;
+    background-color: #F6F8F7;
+    margin: 30px 0;
+}
+
+/* 상단 하우디 로고 및 텍스트 */
+#top__area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+}
+#top__area img {
+    height: 26px;
+}
+#top__area h3 {
+    font-family: var(--font-top-area);
+    font-weight: 300;
+    font-size: 1.2rem;
+    letter-spacing: 0.06rem;
+    color: var(--color-gray);
+}
+#top__area h3 span {
+    font-weight: 600;
+}
+
+/* 프로필 영역 */
+.img__area {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 31.4rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.img__area img {
+    object-fit: cover;
+    height: 34rem;
+}
+h1 {
+    font-size: 2.4rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+h1 span {
+    font-weight: 700;
+}
+.my__profile .info {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.my__profile .info > div {
+    width: 100%;
+    height: 6.6rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.my__profile .info > div a {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #000;
+}
+.my__profile .info .icon {
+    padding-right: 26px;
+}
+.mobile__area, .email__area {
+    border: 1px solid transparent;
+    background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #004DFF 0%, #0200FD 50%, #0000A8 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+.insta__area {
+    background: linear-gradient(135deg, #004DFF 0%, #0200FD 50%, #0000A8 100%);
+}
+.insta__area span {
+    color: rgba(255, 255, 255, .9) !important;
+}
+.insta__area h2 {
+    color: #fff;
+}
+.my__profile .info > div span {
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    padding-left: 26px;
+}
+.my__profile .info > div h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+    padding-left: 26px;
+}
+.my__profile .info > div > div:nth-of-type(2) {
+    padding-right: 26px;
+}
+.my__profile .tip__area {
+    margin: 30px 0;
+    width: 100%;
+    height: 76px;
+    background-color: #F6F8F7;
+    border-radius: 10px;
+    padding: 20px 26px;
+    box-sizing: border-box;
+    position: relative;
+}
+.my__profile .tip__area p {
+    color: var(--color-gray);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+.my__profile .tip__area .title {
+    background-color: #000;
+    border-radius: 10px;
+    width: 35px;
+    height: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    font-size: 1.2rem;
+    position: absolute;
+    top: -10px;
+}
+
+/* 프로젝트 영역 */
+.project__area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 260px 1fr 1fr;
+    gap: 14px;
+}
+.project__area .thumbnail {
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+}
+.project__area .project__info {
+    padding: 0 0 20px 16px;
+    color: #fff;
+    z-index: 10;
+    bottom: 0;
+    position: absolute;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+.project__area .project__info p {
+    font-size: 1.6rem;
+    margin-top: 4px;
+}
+.project__area .overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, .36) 60%,  rgba(0, 0, 0, .72) 100%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.project__area .project__01 {
+    grid-column: 1/3;
+}
+.project__area .img__project__01 {
+    background: url(sources/img-project-01.jpg) no-repeat center / cover;
+    height: 100%;
+}
+.project__area .img__project__02 {
+    background: url(sources/img-project-02.jpg) no-repeat center / cover;
+    height: 100%;
+}
+.project__area .img__project__03 {
+    background: url(sources/img-project-03.jpg) no-repeat center / cover;
+    height: 100%;
+}
+.project__area .img__project__04 {
+    background: url(sources/img-project-04.jpg) no-repeat center / cover;
+    height: 100%;
+}
+.project__area .img__project__05 {
+    background: url(sources/img-project-05.jpg) no-repeat center / cover;
+    height: 100%;
+}
+.more__view {
+    font-size: 1.4rem;
+    line-height: 1.3;
+    color: #2699FB;
+    margin-top: 14px;
+    display: block;
+    text-decoration: none;
+}
+/* 모달 영역 */
+.modal {
+    /*팝업 배경*/
+    display: none; 
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+}
+.modal .modal_popup {
+/*팝업*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    min-height: 800px;
+    overflow: hidden;
+}
+
+/* 해시태그 영역 */
+.tags {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.tags .tag::before {
+    content: '#';
+}
+.tags .tag {
+    border-radius: 80px;
+    width: fit-content;
+    height: 30px;
+    background-color: #F6F8F7;
+    color: var(--color-gray);
+    font-size: 1.4rem;
+    line-height: 1.3;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 10px;
+}
+.tags .tag.point {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+/* 지도 영역 */
+.map {
+    width: calc(100% + 20*2); 
+    margin: 0 -20px;
+    aspect-ratio: 2 / 1;
+}
+.map__info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 14px;
+}
+.map__info .map__txt {
+    font-size: 1.2rem;
+    color: var(--color-gray);
+    line-height: 1.3;
+}
+.map__info .map__txt p {
+    color: #000;
+    font-size: 1.6rem;
+    line-height: 1.3;
+    font-weight: 500;
+    margin-top: 4px;
+}
+
+/* 푸터 영역 */
+footer {
+    width: 100%;
+    padding: 44px 0;
+    text-align: center;
+}
+footer img {
+    height: 18px;
+    opacity: .44;
+}
+
+/* 인트로 영역 */
+#intro__page {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    background: linear-gradient(135deg, #004DFF 0%, #0200FD 50%, #0000A8 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* visibility: hidden; */
+}
+.contents {
+    max-width: 500px;
+    padding: 0 16px;
+}
+.contents .intro__txt {
+    font-family: var(--font-intro);
+    font-weight: 200;
+    font-size: 8.4rem;
+    line-height: 1.3;
+    color: #fff;
+    word-break: keep-all;
+    display: flex;
+    justify-content: center;
+}
+.contents .typying__txt span {
+    font-weight: 700;
+}
+.typingTxt{
+    display:inline-block;
+    width: 430px;
+    max-width: 500px;
+}
+.typingTxt i {
+    font-weight: 700;
+}
+.typed-cursor {
+    display:none;
+}
+.cursor__effect {
+    display: inline-block;
+    transform: translate(-44px, 14px);
+    height: 90px;
+    opacity: 0;
+    transition: opacity .3s;
+    animation-name: cursor;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes cursor{ 
+    0%{border-right: 1px solid #ffffff00} 
+    50%{border-right: 1px solid #ffffffb4} 
+    100%{border-right: 1px solid #ffffff00} 
+}
+.contents .intro__txt .emoji {
+    width: 90px;
+    height: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+.contents .intro__txt .emoji img {
+    object-fit: cover;
+    width: 100%;
+}
+.contents .arrow svg {
+    margin: 44px 0 44px 58px;
+    scale: 96%;
+    visibility: hidden;
+}
+.contents .logo.w {
+    height: 44px;
+    margin: 0 auto;
+    display: block;
+    visibility: hidden;
+}
